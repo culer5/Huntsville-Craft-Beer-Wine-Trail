@@ -1,0 +1,110 @@
+        /* Optional: Makes the sample page fill the window. */
+        
+        html,
+        body {
+            height: 100%;
+            width: auto;
+            margin: 0;
+            padding: 0;
+            font-family: Georgia, Times, "Times New Roman", serif;
+            color: #000;
+            font-size: .95em;
+        }
+        /* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+        
+        #map {
+            height: 100%;
+            width: 75%;
+            background-color: #222;
+            color: #fff;
+        }
+        
+        .nav-bar {
+            background-color: #ecf0f1;
+            display: block;
+            background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right;
+        }
+        
+        .main-title {
+            margin-left: 40px;
+            line-height: 40px;
+        }
+        
+        #search-input {
+            margin: 10px 0 5px 0;
+            width: 97px;
+            height: 16px;
+            /*            text-indent: 100%;*/
+            color: #000000;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        
+        .places {
+            margin: 10px 0px;
+            font-weight: bold;
+        }
+        
+        .places:hover {
+            display: inline;
+            font: normal 1.2em georgia, sans-serif;
+            padding: 10px 5px;
+            border-radius: 3px;
+            text-decoration: underline;
+            color: #9685BA;
+        }
+        
+        .title {
+            font: italic normal 1.4em georgia, sans-serif;
+            letter-spacing: 1px;
+            margin-bottom: 0;
+            color: #7D775C;
+        }
+        
+        .name,
+        .category,
+        .address,
+        .information {
+            color: #000;
+            font-weight: bold;
+            font: italic 1.1em/2.2 georgia;
+            text-align: center;
+        }
+        
+        .info {
+            font: 1.1em/2.2 georgia;
+            font-weight: bold;
+            text-decoration: none;
+            color: #D4CDDC;
+        }
+        /* MEDIA QUERY FOR MOBILE */
+        
+        @media screen and (max-width: 480px) {
+            .navbar {
+                margin-bottom: 0px;
+            }
+            .main-title {
+                margin-top: 25px;
+                margin-left: 0px;
+                line-height: 0px;
+            }
+            #search-input {
+                margin: 10px 20px 0px 0px;
+                padding: 10px 80px 5px 10px;
+                color: black;
+            }
+        }
+        /* MEDIA QUERY FOR TABLET */
+        
+        @media (min-width: 480px) and (max-width: 768px) {
+            #map {
+                height: 100%;
+                background-color: #222;
+                color: #fff;
+            }
+            .nav-bar {
+                background-color: #ecf0f1;
+                width: 50%;
+            }
+        }
