@@ -7,6 +7,7 @@ The objective of the project was to develop a single page application that would
 
 ## How to use
 Click here to try it out: ➡ https://culer5.github.io/Huntsville-Craft-Beer-Wine-Trail/ 
+Or download it directly as a ZIP file: 
 Click on any of the places on the map / sidebar for more information
 Type in the search bar if you only want to see a few of the places listed on the map to make it easier to spot.
 
