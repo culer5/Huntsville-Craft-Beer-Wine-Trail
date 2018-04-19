@@ -29,6 +29,6 @@ This project is licensed under the MIT License - see the LICENSE.txt file for de
 
 Inspiration, code snippets, etc.
 * [awesome-readme](https://github.com/matiassingers/awesome-readme)
-*KnockoutJS by Example by Book by Adnan Jaswal
+
+* KnockoutJS by Example by Book by Adnan Jaswal
 * A Smarter Way to Learn Javascript Book by Mark Myers.
-* 
