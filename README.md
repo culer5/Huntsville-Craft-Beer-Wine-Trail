@@ -8,9 +8,13 @@ The objective of the project was to develop a single page application that would
 ## How to use
 Click here to try it out: ➡ https://culer5.github.io/Huntsville-Craft-Beer-Wine-Trail/ 
 Or download it directly as a ZIP file: https://github.com/culer5/Huntsville-Craft-Beer-Wine-Trail/archive/master.zip
+
 Alternatively, you can click on the green DOWNLOAD button.
-Click on any of the places on the map / sidebar for more information
-Type in the search bar if you only want to see a few of the places listed on the map to make it easier to spot.
+Once the zip file is downloaded to your local drive, unzip all the contents of the zipped folder. Use one of the below methods for Windows machines:
+ Option 1: Select the file, then select the File command in the windows menu, then Extract All then follow the instructions.
+ Option 2: right-click the folder, select Extract All, and then follow the instructions.
+ 
+ Once the files are extracted, launch the index file by double-clicking. Once the file is open in your browser, click on any of the places on the map / sidebar for more information. Type in the search bar if you only want to see a few of the places listed on the map to make it easier to spot.
 
 
 ## Authors
