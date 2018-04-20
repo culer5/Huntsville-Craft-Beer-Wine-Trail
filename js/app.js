@@ -1,109 +1,5 @@
 var appViewModel;
-
-// array of Craft Beer & wine locations in Huntsville, AL
-var locationsBeerWine = [
-    {
-        title: "Stem & Stein",
-        category: "Wine Bar",
-        location: {
-            lat: 34.691411,
-            lng: -86.785807
-        }
-
-	},
-    {
-        title: "Below the Radar Brewing Company",
-        category: "Beer",
-        location: {
-            lat: 34.732857,
-            lng: -86.585449
-        }
-	},
-
-    {
-        title: "Church Street Wine Shoppe",
-        category: "Wine Bar",
-        location: {
-            lat: 34.735868,
-            lng: -86.592468
-        }
-	},
-
-    {
-        title: "SiP",
-        category: "Wine Bar",
-        location: {
-            lat: 34.732910,
-            lng: -86.585374
-        }
-	},
-    {
-        title: "Wish You Were Beer",
-        category: "Beer",
-        location: {
-            lat: 34.756586,
-            lng: -86.724654
-        }
-	},
-    {
-        title: "Blue Pants Brewery",
-        category: "Beer",
-        location: {
-            lat: 34.685157,
-            lng: -86.738995
-        }
-	},
-    {
-        title: "Yellowhammer Brewery",
-        category: "Beer",
-        location: {
-            lat: 34.721772,
-            lng: -86.605468
-        }
-	},
-    {
-        title: "Green Bus Brewery",
-        category: "Beer",
-        location: {
-            lat: 34.730097,
-            lng: -86.583839
-        }
-	},
-    {
-        title: "Salty Nut Brewery",
-        category: "Beer",
-        location: {
-            lat: 34.722552,
-            lng: -86.603749
-        }
-	},
-    {
-        title: "Cork & Crust",
-        category: "Wine Bar",
-        location: {
-            lat: 34.732164,
-            lng: -86.786916
-        }
-	},
-    {
-        title: "Grille 29",
-        category: "Wine Bar",
-        location: {
-            lat: 34.754318,
-            lng: -86.692699
-        }
-	},
-
-    {
-        title: "Rocket Republic Brewing Company",
-        category: "Beer",
-        location: {
-            lat: 34.672810,
-            lng: -86.773962
-        }
-	}
-];
-
+//The location array "locationsBeerWine" is in a separate "data.js" file.
 
 
 // create a map variable that will be used in initMap()
@@ -125,6 +21,8 @@ function initMap() {
         center: myLatLng,
         zoom: 12
     });
+    
+    
     // attach a click event listener to the marker objects and open an info window on click
     // creates infowindow for each place pin
     var infoWindow = new google.maps.InfoWindow();
@@ -195,6 +93,8 @@ function initMap() {
             var venue, address, category, foursquareId, contentString;
 
             // ajax request - foursquare api data (https://developer.foursquare.com/docs/)
+            //Note that if the API does not return with data, an error message returns.
+
             $.ajax({
                 //	type: 'GET',
                 url: foursquareUrl,
@@ -252,7 +152,9 @@ function initMap() {
     } // end of for loop through markers [j]
 }
 
-
+//google.maps.event.addDomListener(window, 'resize', function() {
+//          infowindow.open(map);
+//        });
 
 
 function mapError() {
@@ -317,3 +219,4 @@ appViewModel = new AppViewModel();
 
 // activate knockout apply binding
 ko.applyBindings(appViewModel);
+
